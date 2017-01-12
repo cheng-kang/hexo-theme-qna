@@ -1,0 +1,256 @@
+.mdcss body{
+    margin: 0 auto;
+    font-family: Georgia, Palatino, serif;
+    color: #444444;
+    line-height: 1;
+    max-width: 960px;
+    padding: 30px;
+}
+.mdcss h1,.mdcss h2,.mdcss h3,.mdcss h4 {
+    color: #111111;
+    font-weight: 400;
+}
+.mdcss h1,.mdcss h2,.mdcss h3,.mdcss h4,.mdcss h5, .mdcss p {
+    margin-bottom: 24px;
+    padding: 0;
+}
+.mdcss h1 {
+    font-size: 48px;
+}
+.mdcss h2 {
+    font-size: 36px;
+    /* The bottom margin is small. It's designed to be used with gray meta text
+     * below a post title. */
+    margin: 24px 0 6px;
+}
+.mdcss h3 {
+    font-size: 24px;
+}
+.mdcss h4 {
+    font-size: 21px;
+}
+.mdcss h5 {
+    font-size: 18px;
+}
+.mdcss a {
+    color: #0099ff;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.mdcss a:hover {
+    text-decoration: none;
+    color: #ff6600;
+}
+.mdcss a:visited {
+    color: purple;
+}
+.mdcss ul, .mdcss ol {
+    padding: 0;
+    margin: 0;
+}
+.mdcss li {
+    line-height: 24px;
+}
+.mdcss li ul, .mdcss li ul {
+    margin-left: 24px;
+}
+.mdcss p, .mdcss ul, .mdcss ol {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 540px;
+}
+.mdcss pre {
+    padding: 0px 24px;
+    max-width: 800px;
+    white-space: pre-wrap;
+}
+.mdcss code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+}
+.mdcss aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+.mdcss blockquote {
+    border-left:.5em solid #eee;
+    padding: 0 2em;
+    margin-left:0;
+    max-width: 476px;
+}
+.mdcss blockquote  cite {
+    font-size:14px;
+    line-height:20px;
+    color:#bfbfbf;
+}
+.mdcss blockquote cite:before {
+    content: '\2014 \00A0';
+}
+.mdcss blockquote p {  
+    color: #666;
+    max-width: 460px;
+}
+.mdcss hr {
+    width: 540px;
+    text-align: left;
+    margin: 0 auto 0 0;
+    color: #999;
+}
+/* Code below this line is copyright Twitter Inc. */
+
+.mdcss button,
+.mdcss input,
+.mdcss select,
+.mdcss textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+.mdcss button, .mdcss input {
+  line-height: normal;
+  *overflow: visible;
+}
+.mdcss button::-moz-focus-inner, .mdcss input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.mdcss button,
+.mdcss input[type="button"],
+.mdcss input[type="reset"],
+.mdcss input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+.mdcss input[type=checkbox], .mdcss input[type=radio] {
+  cursor: pointer;
+}
+/* override default chrome & firefox settings */
+.mdcss input:not([type="image"]), .mdcss textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.mdcss input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.mdcss input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.mdcss label,
+.mdcss input,
+.mdcss select,
+.mdcss textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+.mdcss input[type=checkbox], .mdcss input[type=radio] {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+.mdcss input[type=text],
+.mdcss input[type=password],
+.mdcss textarea,
+.mdcss select {
+  display: inline-block;
+  width: 210px;
+  padding: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  height: 18px;
+  color: #808080;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.mdcss select, .mdcss input[type=file] {
+  height: 27px;
+  line-height: 27px;
+}
+.mdcss textarea {
+  height: auto;
+}
+.mdcss 
+/* grey out placeholders */
+:-moz-placeholder {
+  color: #bfbfbf;
+}
+.mdcss ::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+.mdcss input[type=text],
+.mdcss input[type=password],
+.mdcss select,
+.mdcss textarea {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.mdcss input[type=text]:focus, .mdcss input[type=password]:focus, .mdcss textarea:focus {
+  outline: none;
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+/* buttons */
+.mdcss button {
+  display: inline-block;
+  padding: 4px 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #0064cd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
+  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
+  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
+  background-image: linear-gradient(top, #049cdb, #0064cd);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #004b9a;
+  border-bottom-color: #003f81;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+  border-color: #0064cd #0064cd #003f81;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+.mdcss button:hover {
+  color: #fff;
+  background-position: 0 -15px;
+  text-decoration: none;
+}
+.mdcss button:active {
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.mdcss button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
