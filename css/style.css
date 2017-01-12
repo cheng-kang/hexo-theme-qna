@@ -153,7 +153,7 @@ nav ul li a {
 nav ul li:hover a, nav ul li.active a {
   border-bottom-color: #fff;
 }
-nav ul li:hover a, nav ul li.dotted a {
+nav ul li.dotted a {
   border-bottom-style: dotted;
 }
 .social {
