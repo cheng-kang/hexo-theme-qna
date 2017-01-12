@@ -768,7 +768,12 @@ a {
   margin-right: 30px;
   font-size: 0.8em;
 }
-.section_content .breadcrumb, .section_content .page_content {
+.section_content .breadcrumb {
+  text-align: justify;
+  color: #1d2425;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.section_content .page_content {
   text-align: justify;
   color: #1d2425;
   background-color: rgba(255, 255, 255, 0.8);

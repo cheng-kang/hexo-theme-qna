@@ -267,7 +267,7 @@
 #search_content.search_content-modal {
   max-width: 341px !important;
   margin: 0 auto;
-  border: 1px solid #898989;
+  /*border: 1px solid #898989;*/
   position: relative;
   max-width: none;
   color: #494949
