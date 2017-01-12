@@ -123,6 +123,10 @@ header .row {
 .logo a {
   display: block;
   font-size: 22px;
+  padding-right: 60px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 nav {
   float: right;
@@ -517,7 +521,7 @@ input:-webkit-autofill {
     padding: 23px 15px;
   }
   .logo {
-    width: 160px;
+    /*width: 160px;*/
   }
   .logo a {
     line-height: 39px;
@@ -568,7 +572,7 @@ input:-webkit-autofill {
     width: 100%;
   }
   .logo a {
-    width: 180px;
+    /*width: 180px;*/
     line-height:
   }
   .mobile_navbar {
@@ -778,6 +782,6 @@ a {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-#Post, #Archive, #PostList {
+/*#Post, #Archive, #PostList {
   min-height: 500px;
-}
+}*/
