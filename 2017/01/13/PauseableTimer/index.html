@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <title>PauseableTimer | Theme Q&amp;A for Hexo</title>
+    
+    <link rel="alternate" href="/atom.xml" title="Theme Q&amp;A for Hexo" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/hexo-theme-q-a/css/normalize.css">
+    <link rel="stylesheet" href="/hexo-theme-q-a/css/style.css">
+    <link rel="stylesheet" href="/hexo-theme-q-a/css/common.css">
+    <link rel="stylesheet" href="/hexo-theme-q-a/css/markdown.css">
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="mobile_menu_btn">
+  <button class="c-hamburger c-hamburger--htx">
+  <span>toggle menu</span>
+  </button>
+</div>
+<div class="slide_menu">
+  <nav class="nav_scroll">
+    <ul class="clearfix">
+      
+        <li class=" "> <a href="/hexo-theme-q-a/">Home</a> </li>
+      
+        <li class=" active dotted"> <a href="/hexo-theme-q-a/archives">Archive</a> </li>
+      
+    </ul>
+  </nav>
+</div>
+<header>
+  <div class="mobile_navbar clearfix">
+    
+    <div class="logo">
+      <a href="/hexo-theme-q-a/">Theme Q&amp;A for Hexo</a>
+    </div>
+    
+  </div>
+  <div class="row clearfix no_form">
+    <div class="logo">
+      <a href="/hexo-theme-q-a/">Theme Q&amp;A for Hexo</a>
+    </div>
+    <nav class="nav_scroll">
+      <ul class="clearfix">
+        
+          <li class=" "> <a href="/hexo-theme-q-a/">Home</a> </li>
+        
+          <li class=" active dotted"> <a href="/hexo-theme-q-a/archives">Archive</a> </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+        <div class="section" id="Search">
+	<div class="section_content">
+		<h3>
+		Search
+		<br>
+		Find out if your question is answered here
+		</h3>
+		<div id="search_content" class="search_content-modal unexpanded">
+			<div id="search-view">
+				<div class="search-info box">
+					<input type="text" id="search-input" placeholder="Enter Keyword" autocomplete="off">
+					<div class="magnifying-glass" id="search-button">
+						<svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 500 500">
+							<path fill="none" stroke="#fff" stroke-width="36" stroke-linecap="round" d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110"></path>
+						</svg>
+					</div>
+				</div>
+				<div class="modal" id="search_result" style="display:none">
+					<h2>Found 0 match(es):</h2>
+					<ul>
+						<li><a href="http://baidu.com">请问你叫什么名字？</a></li>
+					</ul>
+					<span>
+						<button>×</button>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section" id="Post">
+  <div class="section_content">
+    <p class="breadcrumb"><a href="/hexo-theme-q-a/">Q&A</a> / PauseableTimer</p>
+    <div class="page_content mdcss">
+      <blockquote>
+<p>项目主页: <a href="https://github.com/cheng-kang/PauseableTimer" target="_blank" rel="external">PauseableTimer Github Repository</a></p>
+</blockquote>
+<p>PauseableTimer 是一个用 Swift 写的可暂停的 Timer。</p>
+<p>有时候我们需要暂停计时器，但是这个功能在 Timer(Swift3) 中并没有被实现。因此，经过一些失败的尝试，我创建了这个可以暂停的计时器，希望对你也有用。</p>
+<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><ol>
+<li><p>创建一个计时器 Timer</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">e.g.</div><div class="line">let timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: aSelector, userInfo: nil, repeats: true)</div></pre></td></tr></table></figure>
+</li>
+<li><p>创建一个可暂停的计时器 PauseableTimer，并将之前创建的 Timer 作为参数传入 </p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">e.g.</div><div class="line">let pauseableTimer = PauseableTimer(timer: timer)</div></pre></td></tr></table></figure>
+</li>
+<li><p>暂停 然后 重新开始！</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">e.g.</div><div class="line">pauseableTimer.pause()</div><div class="line">pauseableTimer.resume()</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><strong>注意</strong></p>
+<ul>
+<li>如果用于初始化 PauseableTimer 的 Timer 不是通过 scheduledTimer 方法初始化的或没有被加入到 RunLoop 中，那么你需要手动将它加入到 RunLoop 中。你可以这样做，<code>RunLoop.current.add(timer, forMode: .commonModes)</code>。</li>
+<li>如果你需要操作用于初始化 PauseableTimer 的 Timer 或者需要获取它的属性，请使用 PauseableTimer 的 <code>timer</code> 属性。就像这样，<code>pauseableTimer.timer.firedate = Date()</code>。</li>
+<li><code>invalidate()</code> 方法是为便于手动让 timer 失效而创建的。</li>
+</ul>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>PauseableTimer 并没有重新实现 Swift 中的 Timer，而是将 Timer 作为一个属性然后在它的帮助下实现了 暂停 的功能。</p>
+<p>这个功能的原理受到 <a href="http://www.jianshu.com/p/e554a164d0da" target="_blank" rel="external">NSTimer 总结1(包括计时器不准的解决)</a> 的启发。 </p>
+<p>主要思想是 <code>当你需要暂停的时候，将 Timer 的 firedate 设置为一个无法达到的日期（这样计时器会一直等待，感觉起来就像是暂停了 :D）；当你需要重新开始的时候，将 firedate 设置回原来的时间（这样计时器就可以『照常』触发）</code>。 </p>
+<p>简单聪明！</p>
+<p>你可能注意到了加了引号的『照常』。事实上，这个方法可能无法达到你的期望，因为</p>
+<ol>
+<li><p>Firedate 过期了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">e.g.</div><div class="line">现在的时间是 2017.01.04 10:25。</div><div class="line">原本的 firedate 是 2017.01.04 10:30。</div><div class="line">你现在暂停了这个计时器，并且在十分钟后（2017.01.04 10:35）重新开始。这时，计时器已经错过了它预计的 firedate（2017.01.04 10:30）。</div><div class="line">然而，如果这个计时器已经在 RunLoop 当中的话，当你在 2017.01.04 10:35 将 firedate 设置回 2017.01.04 10:30 时，计时器会立即触发一次。</div></pre></td></tr></table></figure>
+</li>
+<li><p>我们希望计时器继续等待剩下的等待时间。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">e.g.</div><div class="line">现在的时间是 2017.01.04 10:25:00。</div><div class="line">计时器的 timeInterval 是 60 秒。现在计时器被加入到 RunLoop，它应该在 60 秒后触发，也就是在 2017.01.04 10:26:00。</div><div class="line">然后你因为某种原因在 10 秒后暂停了它，也就是在 2017.01.04 10:25:10。你在 2017.01.04 10:25:50 的时候重新开始了计时器。</div><div class="line">不过，你仍然希望它是在设置好后，等待 60 秒再触发，不管暂停的那段时间。所以它应该再等待 50 秒，然后在 2017.01.04 10:26:40 触发。</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>完美的解决方案应该是满足以上所述三种情况的（另一种情况是我们不在乎原始 firedate 是否过期）。不过，这个项目目前只解决了第二个情况，因为这是我在其他项目中所遇到的需要解决的问题。</p>
+<p>未来我可能会继续这个小项目，然后将每一种情况的解决方案都完善起来。</p>
+
+    </div>
+  </div>
+</div>
+
+
+        <footer>
+	<div class="footer_wrap">
+		<div class="social">
+			<ul class="clearfix">
+		    
+		      
+				<li> <a href="http://github.com/cheng-kang" target="_blank"> <img src="/hexo-theme-q-a/img/Github.png"> </a> </li>
+			  
+		    
+		      
+				<li> <a href="http://www.weibo.com/progrant" target="_blank"> <img src="/hexo-theme-q-a/img/Weibo.png"> </a> </li>
+			  
+		    
+			</ul>
+		</div>
+		<img src="/hexo-theme-q-a/img/line.jpg">
+		<div class="copyright">
+			&copy; 2017 Theme Q&amp;A for Hexo | PROVIDED BY  <a title="Kang Cheng" href="http://chengkang.me/" target="_blank">Kang Cheng</a>
+		</div>
+	</div>
+</footer>
+    </div>
+  </body>
+</html>
