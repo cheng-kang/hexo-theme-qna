@@ -27,9 +27,9 @@
   <nav class="nav_scroll">
     <ul class="clearfix">
       
-      <li class=" "> <a href="/hexo-theme-q-a/">Home</a> </li>
+      <li class=" "> <a href="/hexo-theme-q-a/">主页</a> </li>
       
-      <li class=" active dotted"> <a href="/hexo-theme-q-a/archives">Archive</a> </li>
+      <li class=" active dotted"> <a href="/hexo-theme-q-a/archives">归档</a> </li>
       
     </ul>
   </nav>
@@ -71,9 +71,9 @@
     <nav class="nav_scroll">
       <ul class="clearfix">
         
-        <li class=" "> <a href="/hexo-theme-q-a/">Home</a> </li>
+        <li class=" "> <a href="/hexo-theme-q-a/">主页</a> </li>
         
-        <li class=" active dotted"> <a href="/hexo-theme-q-a/archives">Archive</a> </li>
+        <li class=" active dotted"> <a href="/hexo-theme-q-a/archives">归档</a> </li>
         
       </ul>
     </nav>
@@ -82,14 +82,14 @@
       <div class="section" id="Search">
 	<div class="section_content">
 		<h3>
-		Search
+		搜索
 		<br>
-		Find out if your question is answered here
+		看看你的问题是否已经被回答了
 		</h3>
 		<div id="search_content" class="search_content-modal unexpanded">
 			<div id="search-view">
 				<div class="search-info box">
-					<input type="text" id="search-input" placeholder="Enter Keyword" onkeyup="searchInputOnKeyUp()">
+					<input type="text" id="search-input" placeholder="输入关键词" onkeyup="searchInputOnKeyUp()">
 					<div class="magnifying-glass" id="search-button" onclick="searchInSite(event)">
 						<svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 500 500">
 						<path fill="none" stroke="#fff" stroke-width="36" stroke-linecap="round" d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110"></path>
@@ -203,7 +203,7 @@ this.ref('id');
 </div>
 <div class="section" id="Post">
 	<div class="section_content">
-		<p class="breadcrumb"><a href="/hexo-theme-q-a/">Q&amp;A</a> / md-test</p>
+		<p class="breadcrumb"><a href="/hexo-theme-q-a/">问&amp;答</a> / md-test</p>
 		<div class="page_content mdcss">
 			<h1 id="Let’s-make-the-Web-prettier"><a href="#Let’s-make-the-Web-prettier" class="headerlink" title="Let’s make the Web prettier."></a>Let’s make the Web prettier.</h1><p>Markdown.css is better default styling for your Markdown files. It’s heavily<br>inspired by the <a href="http://getspace.org" target="_blank" rel="external">Space</a> WordPress theme. This page is<br>itself a Markdown file using the <code>markdown.css</code> stylesheet. View the source<br>code <a href="http://kevinburke.bitbucket.org/markdowncss/index.md" target="_blank" rel="external">here</a>.</p>
 <h3 id="Sample-File"><a href="#Sample-File" class="headerlink" title="Sample File"></a>Sample File</h3><p>View a sample file that implements most of the Markdown spec<br><a href="http://kevinburke.bitbucket.org/markdowncss/sample.html" target="_blank" rel="external">here</a>.</p>
@@ -218,26 +218,6 @@ this.ref('id');
 
 	
 
-	
-	<div id="disqus_thread"></div>
-	<script>
-	/**
-	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-	/*
-	var disqus_config = function () {
-	this.page.url = "http://chengkang.me/hexo-theme-q-a/2017/01/12/md-test/";  // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = "2017/01/12/md-test/"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
-	*/
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
-	s.src = '//swift-newbie.disqus.com/embed.js';
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 	
 	
 </div>
@@ -300,6 +280,7 @@ this.ref('id');
     }
     var isMenuExpanded = false;
     document.getElementById("mobile_menu_btn").onclick = function toggleMobileMenu() {
+        alert("click");
     if (isMenuExpanded) {
     document.getElementsByClassName('slide_menu')[0].className = "slide_menu";
     } else {
@@ -308,5 +289,7 @@ this.ref('id');
     isMenuExpanded = !isMenuExpanded;
     }
     </script>
+    
+    
   </body>
 </html>
