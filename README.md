@@ -1,8 +1,10 @@
-# Q&A
+# Theme Q&A for Hexo 
 
 A Knowledge Base Theme for [Hexo].
 
 - [Preview](http://chengkang.me/hexo-theme-q-a/)
+
+![](https://raw.githubusercontent.com/cheng-kang/hexo-theme-q-a/master/screenshot.png)
 
 ## Installation
 
