@@ -804,3 +804,7 @@ a {
 /*#Post, #Archive, #PostList {
   min-height: 500px;
 }*/
+
+.slide_menu .copyright {
+  font-size: 12px;
+}
