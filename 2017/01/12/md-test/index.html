@@ -19,7 +19,7 @@
   <body onscroll="scrollYListener()">
     <div class="wrapper">
         <div class="mobile_menu_btn">
-  <button class="c-hamburger c-hamburger--htx" onclick="toggleMobileMenu()">
+  <button id="mobile_menu_btn" class="c-hamburger c-hamburger--htx">
   <span>toggle menu</span>
   </button>
 </div>
@@ -283,7 +283,8 @@
       }
 
       var isMenuExpanded = false;
-      function toggleMobileMenu() {
+
+      document.getElementById("mobile_menu_btn").onclick = function toggleMobileMenu() {
         if (isMenuExpanded) {
           document.getElementsByClassName('slide_menu')[0].className = "slide_menu";
         } else {
