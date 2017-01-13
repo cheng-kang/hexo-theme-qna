@@ -4,7 +4,7 @@ A Knowledge Base Theme for [Hexo].
 
 - [Preview](http://chengkang.me/hexo-theme-qna/)
 
-![](https://raw.githubusercontent.com/cheng-kang/hexo-theme-qna/master/screenshot.png)
+![](https://raw.githubusercontent.com/cheng-kang/hexo-theme-qna/master/QnA.png)
 
 ## Installation
 
