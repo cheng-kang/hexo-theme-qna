@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <%
+        var title = page.title;
+        if (is_archive()){
+        title = __('archive_a');
+        if (is_month()){
+        title += ': ' + page.year + '/' + page.month;
+        } else if (is_year()){
+        title += ': ' + page.year;
+        }
+        } else if (is_category()){
+        title = __('category') + ': ' + page.category;
+        } else if (is_tag()){
+        title = __('tag') + ': ' + page.tag;
+        }
+        %>
+        <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+        <% if (theme.rss){ %>
+        <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+        <% } %>
+        <% if (theme.favicon){ %>
+        <link rel="icon" href="<%- theme.favicon %>">
+        <% } %>
+        <%- css('css/normalize') %>
+        <%- css('css/style') %>
+        <%- css('css/common') %>
+        <%- css('css/markdown') %>
+    </head>
+    <body onscroll="scrollYListener()">
+        <div class="wrapper">
+            <%- partial('_partial/header') %>
+            <%- body %>
+            <%- partial('_partial/footer') %>
+        </div>
+        <script type="text/javascript">
+        function scrollYListener() {
+        var searchHeight = parseInt(getComputedStyle(document.getElementById("Search")).height)
+        var width = document.documentElement.clientWidth;
+        var supportPageOffset = window.pageXOffset !== undefined;
+        var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+        var scrollY = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
+        if (scrollY >= searchHeight) {
+        document.getElementsByTagName('header')[0].style.backgroundColor = "#cd4b4b";
+        document.getElementsByClassName('logo')[0].style.backgroundColor = "#cd4b4b";
+        } else {
+        document.getElementsByTagName('header')[0].style.backgroundColor = "#4f8e8e";
+        document.getElementsByClassName('logo')[0].style.backgroundColor = "#4f8e8e";
+        }
+        }
+        var isMenuExpanded = false;
+        document.getElementById("mobile_menu_btn").onclick = function toggleMobileMenu() {
+        if (isMenuExpanded) {
+        document.getElementsByClassName('slide_menu')[0].className = "slide_menu";
+        } else {
+        document.getElementsByClassName('slide_menu')[0].className += " mobile_menu_active";
+        }
+        isMenuExpanded = !isMenuExpanded;
+        }
+        </script>
+        <% if (theme.ga != null) { %>
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', '<%= theme.ga %>', 'auto');
+        ga('send', 'pageview');
+        </script>
+        <% } %>
+        <% if (theme.ba != null) { %>
+        <script>
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?<%= theme.ba %>";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+        <% } %>
+    </body>
+</html>

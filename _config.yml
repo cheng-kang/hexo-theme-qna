@@ -1,0 +1,65 @@
+#----------------------------------
+# Header
+#
+
+menu:
+  Home: /
+  Archive: /archives
+
+
+rss: /atom.xml
+
+#----------------------------------
+# Footer
+#
+
+social:
+  GitHub: http://github.com/cheng-kang
+  Weibo: http://www.weibo.com/progrant
+  Twitter: https://twitter.com/ScotlAnt
+  LinkedIn: 
+
+#----------------------------------
+# Search
+#
+
+# default
+# search_title: Search
+# search_subtitle: Find out if your question is answered here
+
+search_title: 
+search_subtitle: 
+
+#----------------------------------
+# Comment
+#
+
+# fill in with your duoshuo/disqus short_name
+duoshuo: 
+disqus: 
+
+#----------------------------------
+# Analytics
+#
+
+# ga for google analytics
+# ba for baidu analytics (百度统计)
+
+ga: 
+ba: 
+
+#----------------------------------
+# Miscellaneous
+#
+
+# default
+# home_title: Latest List
+# archive_title: Archive
+
+author_page: 
+home_title: 
+archive_title: 
+
+favicon: /favicon.png
+
+#----------------------------------

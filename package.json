@@ -1,0 +1,22 @@
+{
+  "name": "hexo-theme-q&a",
+  "version": "1.0.0",
+  "description": "A Q&A theme for Hexo.",
+  "repository": {
+  	"type": "git",
+  	"url": "https://github.com/cheng-kang/hexo-theme-q-a.git"
+  },
+  "keyword": [
+  	"hexo",
+  	"theme",
+  	"q&a",
+  	"faq"
+  ],
+  "author": "Kang Cheng",
+  "license": "MIT",
+  "bugs": "https://github.com/cheng-kang/hexo-theme-q-a/issues",
+  "homepage": "https://github.com/cheng-kang/hexo-theme-q-a#readme",
+  "devDependencies": {
+    "lunr": "~0.7.2",
+  }
+}

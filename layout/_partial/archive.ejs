@@ -1,0 +1,16 @@
+<div class="section" id="Archive">
+    <h2 class="center"><%= theme.archive_title == null ? __('Archive Title') : theme.archive_title %></h2>
+    <div class="article_list">
+        <% var year = 0; %>
+        <% var isChanged = false; %>
+        <% page.posts.each(function(post) { %>
+        <% var postYear = date(post.date, 'YYYY') - 0; %>
+        <% isChanged = year !== postYear %>
+        <% year = isChanged ? postYear : year %>
+        <% if (isChanged) { %>
+        <h4><%= year %></h4>
+        <% } %>
+        <p class="article_title"><span><%= full_date(post.date, 'll') %></span><a href="<%= url_for(post.path) %>"><%= (post.title == "" ? "no-title" : post.title) %></a></p>
+        <% }); %>
+    </div>
+</div>

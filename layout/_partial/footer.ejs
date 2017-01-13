@@ -1,0 +1,17 @@
+<footer>
+	<div class="footer_wrap">
+		<div class="social">
+			<ul class="clearfix">
+				<% for (var i in theme.social){ %>
+				<% if (theme.social[i] != null) { %>
+				<li> <a href="<%= theme.social[i] %>" target="_blank"> <%- image_tag('img/'+i+'.png') %> </a> </li>
+				<% } %>
+				<% } %>
+			</ul>
+		</div>
+		<%- image_tag('img/line.jpg') %>
+		<div class="copyright">
+			&copy; <%= date(new Date(), 'YYYY') %> <%= config.title %> | Provided By <% if (theme.author_page != "") { %> <a title="<%= config.author %>" href="http://chengkang.me/" target="_blank"><%= config.author %></a><% } else { %><%= config.author %><% } %>
+		</div>
+	</div>
+</footer>

@@ -1,0 +1,8 @@
+<div class="page_wrapper" id="PostList">
+	<h2 class="center"><%= theme.home_title == null ? __('Home Title') : theme.home_title %></h2>
+	<div class="article_list">
+		<% page.posts.each(function(post, index) { %>
+		<p class="article_title"><a href="<%= url_for(post.path) %>"><%= (index+1)+'. '+(post.title == "" ? "no-title" : post.title) %></a></p>
+		<% }); %>
+	</div>
+</div>

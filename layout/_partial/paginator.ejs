@@ -1,0 +1,27 @@
+<% if (from == "Post") { %>
+	<% var prev = page.prev ? page.prev.path : false; %>
+	<% var next = page.next ? page.next.path : false; %>
+	<% if (prev || next ) { %>
+	<div class="section" id="Pagenation">
+		<% if (prev) { %>
+		<a href="<%= url_for(prev) %>">Prev</a>
+		<% } %>
+		<% if (next) { %>
+		<a href="<%= url_for(next) %>">Next</a>
+		<% } %>
+	</div>
+	<% } %>
+<% } else { %>
+	<% var prev = page.prev_link; %>
+	<% var next = page.next_link; %>
+	<% if (page.prev || page.next ) { %>
+	<div class="section" id="Pagenation">
+		<% if (page.prev) { %>
+		<a href="<%= url_for(prev) %>">Prev</a>
+		<% } %>
+		<% if (page.next) { %>
+		<a href="<%= url_for(next) %>">Next</a>
+		<% } %>
+	</div>
+	<% } %>
+<% } %>

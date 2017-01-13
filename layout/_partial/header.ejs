@@ -1,0 +1,47 @@
+<div class="mobile_menu_btn">
+  <button id="mobile_menu_btn" class="c-hamburger c-hamburger--htx">
+  <span>toggle menu</span>
+  </button>
+</div>
+<div class="slide_menu">
+  <nav class="nav_scroll">
+    <ul class="clearfix">
+      <% for (var i in theme.menu){ %>
+      <li class="<% if ((is_archive() && i == "Archive")||(is_home() && i == "Home")){ %>active<% } %> <% if (is_post() && i == "Archive"){ %>active dotted<% } %>"> <a href="<%- url_for(theme.menu[i]) %>"><%= __(i) %></a> </li>
+      <% } %>
+    </ul>
+  </nav>
+  <div class="social">
+    <ul class="clearfix">
+      <% for (var i in theme.social){ %>
+      <% if (theme.social[i] != null) { %>
+      <li> <a href="<%= theme.social[i] %>" target="_blank"> <%- image_tag('img/'+i+'.png') %> </a> </li>
+      <% } %>
+      <% } %>
+    </ul>
+  </div>
+  <div class="copyright">
+    &copy; <%= date(new Date(), 'YYYY') %> <%= config.title %> | Provided By <% if (theme.author_page != "") { %> <a title="<%= config.author %>" href="http://chengkang.me/" target="_blank"><%= config.author %></a><% } else { %><%= config.author %><% } %>
+  </div>
+</div>
+<header>
+  <div class="mobile_navbar clearfix">
+    
+    <div class="logo">
+      <a href="<%- url_for() %>"><%= config.title %></a>
+    </div>
+    
+  </div>
+  <div class="row clearfix no_form">
+    <div class="logo">
+      <a href="<%- url_for() %>"><%= config.title %></a>
+    </div>
+    <nav class="nav_scroll">
+      <ul class="clearfix">
+        <% for (var i in theme.menu){ %>
+        <li class="<% if ((is_archive() && i == "Archive")||(is_home() && i == "Home")){ %>active<% } %> <% if (is_post() && i == "Archive"){ %>active dotted<% } %>"> <a href="<%- url_for(theme.menu[i]) %>"><%= __(i) %></a> </li>
+        <% } %>
+      </ul>
+    </nav>
+  </div>
+</header>
