@@ -165,7 +165,7 @@ abbr[title] { border-bottom: 1px dotted; }
 .mdcss pre,
 .mdcss .highlight { overflow: auto; margin: 20px 0; padding: 15px; font-size: 13px; color: #4d4d4c; background: #f7f7f7; line-height: 1.6; letter-spacing: 0px;}
 .mdcss pre,
-.mdcss code { font-family: "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace; }
+.mdcss code { /*font-family: "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace;*/ font-family: "dosis.medium"; }
 .mdcss code { padding: 2px 4px; word-break: break-all; color: #222; background: #eee; border-radius: 4px; font-size: 13px; }
 .mdcss pre code { padding: 0; background: none; text-shadow: none; }
 .mdcss .highlight pre { border: none; margin: 0; padding: 1px; }
