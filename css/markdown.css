@@ -646,7 +646,7 @@ abbr[title] { border-bottom: 1px dotted; }
 .mdcss h4,
 .mdcss h5,
 .mdcss h6 { margin: 20px 0 10px; }
-.mdcss p { margin: 0 0 25px 0; }
+.mdcss p { margin: 0 0 25px 0; /*font-family: "dosis.medium";*/font-size: 14px;}
 .mdcss a { border-bottom-color: #ccc; }
 .mdcss hr { margin: 20px 0; height: 2px; }
 .mdcss .main-inner { margin-top: 80px; }

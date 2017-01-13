@@ -771,6 +771,7 @@ a {
   text-align: justify;
   color: #1d2425;
   background-color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
 }
 .section_content .page_content {
   text-align: justify;
