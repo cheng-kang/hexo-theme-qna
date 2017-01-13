@@ -130,33 +130,17 @@
     </div>
     <script type="text/javascript">
       function scrollYListener() {
+        var searchHeight = parseInt(getComputedStyle(document.getElementById("Search")).height)
         var width = document.documentElement.clientWidth;
         var scrollY = window.scrollY;
+        var scrollMax = width >= 1420 ? searchHeight - 52 : width >= 1279 ? searchHeight - 48 : searchHeight - 39;
 
-        if (width >= 1420) {
-          if (scrollY >= 52) {
-            document.getElementsByTagName('header')[0].style.backgroundColor = "#cd4b4b"
-            "#cd4b4b";
-          } else {
-            document.getElementsByTagName('header')[0].style.backgroundColor = "#4f8e8e"
-            "#cd4b4b";
-          }
-        } else if (width >= 1279) {
-          if (scrollY >= 48) {
-            document.getElementsByTagName('header')[0].style.backgroundColor = "#cd4b4b"
-            "#cd4b4b";
-          } else {
-            document.getElementsByTagName('header')[0].style.backgroundColor = "#4f8e8e"
-            "#cd4b4b";
-          }
+        if (scrollY >= scrollMax) {
+          document.getElementsByTagName('header')[0].style.backgroundColor = "#cd4b4b"
+          "#cd4b4b";
         } else {
-          if (scrollY >= 39) {
-            document.getElementsByTagName('header')[0].style.backgroundColor = "#cd4b4b"
-            "#cd4b4b";
-          } else {
-            document.getElementsByTagName('header')[0].style.backgroundColor = "#4f8e8e"
-            "#cd4b4b";
-          }
+          document.getElementsByTagName('header')[0].style.backgroundColor = "#4f8e8e"
+          "#cd4b4b";
         }
       }
     </script>
