@@ -729,6 +729,17 @@ input:-webkit-autofill {
     background-color: #fafafa;
     box-shadow: 1px 1px 6px 0px #cccccc;
   }
+  #Archive .article_list .article_title {
+    margin-left: 0;
+    word-break: break-all;
+    text-align: left;
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  #Archive .article_list .article_title span {
+    font-size: 12px;
+  }
 }
 a {
   text-decoration: none;
