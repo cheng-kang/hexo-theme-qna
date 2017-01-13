@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/hexo-theme-q-a/css/common.css">
     <link rel="stylesheet" href="/hexo-theme-q-a/css/markdown.css">
   </head>
-  <body>
+  <body onscroll="scrollYListener()">
     <div class="wrapper">
         <div class="mobile_menu_btn">
   <button class="c-hamburger c-hamburger--htx">
@@ -167,5 +167,37 @@
 	</div>
 </footer>
     </div>
+    <script type="text/javascript">
+      function scrollYListener() {
+        var width = document.documentElement.clientWidth;
+        var scrollY = window.scrollY;
+
+        if (width >= 1420) {
+          if (scrollY >= 52) {
+            document.getElementsByTagName('header')[0].style.backgroundColor = "#cd4b4b"
+            "#cd4b4b";
+          } else {
+            document.getElementsByTagName('header')[0].style.backgroundColor = "#4f8e8e"
+            "#cd4b4b";
+          }
+        } else if (width >= 1279) {
+          if (scrollY >= 48) {
+            document.getElementsByTagName('header')[0].style.backgroundColor = "#cd4b4b"
+            "#cd4b4b";
+          } else {
+            document.getElementsByTagName('header')[0].style.backgroundColor = "#4f8e8e"
+            "#cd4b4b";
+          }
+        } else {
+          if (scrollY >= 39) {
+            document.getElementsByTagName('header')[0].style.backgroundColor = "#cd4b4b"
+            "#cd4b4b";
+          } else {
+            document.getElementsByTagName('header')[0].style.backgroundColor = "#4f8e8e"
+            "#cd4b4b";
+          }
+        }
+      }
+    </script>
   </body>
 </html>
