@@ -1,27 +1,27 @@
-# Theme Q&A for Hexo 
+# Theme QnA for Hexo 
 
 A Knowledge Base Theme for [Hexo].
 
-- [Preview](http://chengkang.me/hexo-theme-q-a/)
+- [Preview](http://chengkang.me/hexo-theme-qna/)
 
-![](https://raw.githubusercontent.com/cheng-kang/hexo-theme-q-a/master/screenshot.png)
+![](https://raw.githubusercontent.com/cheng-kang/hexo-theme-qna/master/screenshot.png)
 
 ## Installation
 
 ### Install
 
 ``` bash
-$ git clone https://github.com/cheng-kang/hexo-theme-q-a.git themes/Q&A
+$ git clone https://github.com/cheng-kang/hexo-theme-q-a.git themes/QnA
 ```
 
 ### Enable
 
-Modify `theme` setting in `_config.yml` to `Q&A`.
+Modify `theme` setting in `_config.yml` to `QnA`.
 
 ### Update
 
 ``` bash
-cd themes/Q&A
+cd themes/QnA
 git pull
 ```
 
