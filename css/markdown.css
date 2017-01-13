@@ -65,7 +65,7 @@ abbr[title] { border-bottom: 1px dotted; }
 .mdcss h3,
 .mdcss h4,
 .mdcss h5,
-.mdcss h6 { margin: 0; padding: 0; font-weight: bold; line-height: 1.5; letter-spacing: 2px; font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif; }
+.mdcss h6 { margin: 0; padding: 0; font-weight: bold; line-height: 1.5; letter-spacing: 0px; /*font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;*/ }
 .mdcss h2,
 .mdcss h3,
 .mdcss h4,
@@ -98,7 +98,8 @@ abbr[title] { border-bottom: 1px dotted; }
 .mdcss p { margin: 0 0 25px 0; }
 .mdcss a { color: #555; text-decoration: none; border-bottom: 1px solid #999; word-wrap: break-word; }
 .mdcss a:hover { color: #222; border-bottom-color: #222; }
-.mdcss ul { list-style: none; }
+.mdcss ul { list-style: none; padding-left: 20px;}
+.mdcss ul li { list-style: none; font-size: 14px; letter-spacing: 0px;}
 .mdcss blockquote { margin: 0; padding: 0; }
 .mdcss img { display: block; margin: auto; max-width: 100%; height: auto; }
 .mdcss hr { margin: 40px 0; height: 3px; border: none; background-color: #ddd; background-image: repeating-linear-gradient(-45deg, #fff, #fff 4px, transparent 4px, transparent 8px); }
@@ -162,7 +163,7 @@ abbr[title] { border-bottom: 1px dotted; }
 .mdcss .container .footer-inner { width: 900px; }
 }
 .mdcss pre,
-.mdcss .highlight { overflow: auto; margin: 20px 0; padding: 15px; font-size: 13px; color: #4d4d4c; background: #f7f7f7; line-height: 1.6; }
+.mdcss .highlight { overflow: auto; margin: 20px 0; padding: 15px; font-size: 13px; color: #4d4d4c; background: #f7f7f7; line-height: 1.6; letter-spacing: 0px;}
 .mdcss pre,
 .mdcss code { font-family: "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace; }
 .mdcss code { padding: 2px 4px; word-break: break-all; color: #222; background: #eee; border-radius: 4px; font-size: 13px; }
@@ -646,7 +647,7 @@ abbr[title] { border-bottom: 1px dotted; }
 .mdcss h4,
 .mdcss h5,
 .mdcss h6 { margin: 20px 0 10px; }
-.mdcss p { margin: 0 0 25px 0; /*font-family: "dosis.medium";*/font-size: 14px; letter-spacing: 2px;}
+.mdcss p { margin: 0 0 25px 0; /*font-family: "dosis.medium";*/font-size: 14px; letter-spacing: 0px;}
 .mdcss a { border-bottom-color: #ccc; }
 .mdcss hr { margin: 20px 0; height: 2px; }
 .mdcss .main-inner { margin-top: 80px; }
