@@ -455,7 +455,6 @@ footer {
   line-height: 37px;
 }
 #PostList .article_list .article_title {
-  margin-left: 50px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
