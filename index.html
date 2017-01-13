@@ -133,9 +133,8 @@
         var searchHeight = parseInt(getComputedStyle(document.getElementById("Search")).height)
         var width = document.documentElement.clientWidth;
         var scrollY = window.scrollY;
-        var scrollMax = width >= 1421 ? searchHeight - 117 : width >= 1280 ? searchHeight - 88 : width >= 979 ? searchHeight - 79 : width >= 767 ? searchHeight - 85 : searchHeight - 69;
 
-        if (scrollY >= scrollMax) {
+        if (scrollY >= searchHeight) {
           document.getElementsByTagName('header')[0].style.backgroundColor = "#cd4b4b"
           "#cd4b4b";
         } else {
