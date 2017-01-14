@@ -112,6 +112,7 @@
 	</div>
 </div>
 
+
 <script src="/hexo-theme-qna/js/lunr.min.js"></script>
 <script>
 var content = lunr(function () {
@@ -119,8 +120,7 @@ this.field('title');
 this.field('content');
 this.ref('id');
 })
-	var postsAllText = (function () {/*::qa::lurn::qa::Categories::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/24/categories/::qa::lurn::qa::&lt;p&gt;This post contains 3 categories. Make sure your theme can display all of the categories.&lt;/p&gt;
-::qa::lurn::qa::Elements::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/24/elements/::qa::lurn::qa::&lt;p&gt;The purpose of this post is to help you make sure all of HTML elements can display properly. If you use CSS reset, don’t forget to redefine the style by yourself.&lt;/p&gt;
+	var postsAllText = (function () {/*::qa::lurn::qa::Elements::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/24/elements/::qa::lurn::qa::&lt;p&gt;The purpose of this post is to help you make sure all of HTML elements can display properly. If you use CSS reset, don’t forget to redefine the style by yourself.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&quot;Heading-1&quot;&gt;&lt;a href=&quot;#Heading-1&quot; class=&quot;headerlink&quot; title=&quot;Heading 1&quot;&gt;&lt;/a&gt;Heading 1&lt;/h1&gt;&lt;h2 id=&quot;Heading-2&quot;&gt;&lt;a href=&quot;#Heading-2&quot; class=&quot;headerlink&quot; title=&quot;Heading 2&quot;&gt;&lt;/a&gt;Heading 2&lt;/h2&gt;&lt;h3 id=&quot;Heading-3&quot;&gt;&lt;a href=&quot;#Heading-3&quot; class=&quot;headerlink&quot; title=&quot;Heading 3&quot;&gt;&lt;/a&gt;Heading 3&lt;/h3&gt;&lt;h4 id=&quot;Heading-4&quot;&gt;&lt;a href=&quot;#Heading-4&quot; class=&quot;headerlink&quot; title=&quot;Heading 4&quot;&gt;&lt;/a&gt;Heading 4&lt;/h4&gt;&lt;h5 id=&quot;Heading-5&quot;&gt;&lt;a href=&quot;#Heading-5&quot; class=&quot;headerlink&quot; title=&quot;Heading 5&quot;&gt;&lt;/a&gt;Heading 5&lt;/h5&gt;&lt;h6 id=&quot;Heading-6&quot;&gt;&lt;a href=&quot;#Heading-6&quot; class=&quot;headerlink&quot; title=&quot;Heading 6&quot;&gt;&lt;/a&gt;Heading 6&lt;/h6&gt;&lt;hr&gt;
 &lt;h2 id=&quot;Paragraph&quot;&gt;&lt;a href=&quot;#Paragraph&quot; class=&quot;headerlink&quot; title=&quot;Paragraph&quot;&gt;&lt;/a&gt;Paragraph&lt;/h2&gt;&lt;p&gt;Lorem ipsum dolor sit amet, &lt;a href=&quot;&quot;&gt;test link&lt;/a&gt; consectetur adipiscing elit. &lt;strong&gt;Strong text&lt;/strong&gt; pellentesque ligula commodo viverra vehicula. &lt;em&gt;Italic text&lt;/em&gt; at ullamcorper enim. Morbi a euismod nibh. &lt;u&gt;Underline text&lt;/u&gt; non elit nisl. &lt;del&gt;Deleted text&lt;/del&gt; tristique, sem id condimentum tempus, metus lectus venenatis mauris, sit amet semper lorem felis a eros. Fusce egestas nibh at sagittis auctor. Sed ultricies ac arcu quis molestie. Donec dapibus nunc in nibh egestas, vitae volutpat sem iaculis. Curabitur sem tellus, elementum nec quam id, fermentum laoreet mi. Ut mollis ullamcorper turpis, vitae facilisis velit ultricies sit amet. Etiam laoreet dui odio, id tempus justo tincidunt id. Phasellus scelerisque nunc sed nunc ultricies accumsan.&lt;/p&gt;
@@ -168,19 +168,11 @@ this.ref('id');
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&quot;Misc-Stuff-abbr-acronym-sub-sup-etc&quot;&gt;&lt;a href=&quot;#Misc-Stuff-abbr-acronym-sub-sup-etc&quot; class=&quot;headerlink&quot; title=&quot;Misc Stuff - abbr, acronym, sub, sup, etc.&quot;&gt;&lt;/a&gt;Misc Stuff - abbr, acronym, sub, sup, etc.&lt;/h2&gt;&lt;p&gt;Lorem &lt;sup&gt;superscript&lt;/sup&gt; dolor &lt;sub&gt;subscript&lt;/sub&gt; amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. &lt;cite&gt;cite&lt;/cite&gt;. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. &lt;acronym title=&quot;National Basketball Association&quot;&gt;NBA&lt;/acronym&gt; Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  &lt;abbr title=&quot;Avenue&quot;&gt;AVE&lt;/abbr&gt;&lt;/p&gt;
+::qa::lurn::qa::Categories::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/24/categories/::qa::lurn::qa::&lt;p&gt;This post contains 3 categories. Make sure your theme can display all of the categories.&lt;/p&gt;
 ::qa::lurn::qa::Excerpts::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/25/excerpts/::qa::lurn::qa::&lt;p&gt;The following contents should be invisible in home/archive page.&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna vitae velit eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Aliquam eleifend dolor vitae libero pharetra adipiscing. Etiam adipiscing dolor a quam tempor, eu convallis nulla varius. Aliquam sollicitudin risus a porta aliquam. Ut nec velit dolor. Proin eget leo lobortis, aliquam est sed, mollis mauris. Fusce vitae leo pretium massa accumsan condimentum. Fusce malesuada gravida lectus vel vulputate. Donec bibendum porta nibh ut aliquam.&lt;/p&gt;
 &lt;p&gt;Sed lorem felis, congue non fringilla eu, aliquam eu eros. Curabitur orci libero, mollis sed semper vitae, adipiscing in lectus. Aenean non egestas odio. Donec sollicitudin nisi quis lorem gravida, in pharetra mauris fringilla. Duis sit amet faucibus dolor, id aliquam neque. In egestas, odio gravida tempor dictum, mauris felis faucibus purus, sit amet commodo lacus diam vitae est. Ut ut quam eget massa semper sodales. Aenean non ipsum cursus, blandit lectus in, ornare odio. Curabitur ultrices porttitor vulputate.&lt;/p&gt;
-::qa::lurn::qa::Gallery Post::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/25/gallery-post/::qa::lurn::qa::&lt;p&gt;This post contains 4 photos:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Widescreen wallpaper&lt;/li&gt;
-&lt;li&gt;Portrait photo&lt;/li&gt;
-&lt;li&gt;Dual widescreen wallpaper&lt;/li&gt;
-&lt;li&gt;Small photo&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;All photos should be displayed properly.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;From &lt;a href=&quot;http://wallbase.cc&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Wallbase.cc&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 ::qa::lurn::qa::Hello World::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2017/01/14/hello-world/::qa::lurn::qa::&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
@@ -190,12 +182,22 @@ this.ref('id');
 &lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo deploy&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+::qa::lurn::qa::Gallery Post::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/25/gallery-post/::qa::lurn::qa::&lt;p&gt;This post contains 4 photos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Widescreen wallpaper&lt;/li&gt;
+&lt;li&gt;Portrait photo&lt;/li&gt;
+&lt;li&gt;Dual widescreen wallpaper&lt;/li&gt;
+&lt;li&gt;Small photo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All photos should be displayed properly.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;From &lt;a href=&quot;http://wallbase.cc&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Wallbase.cc&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+::qa::lurn::qa::www.google.com::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/24/link-post-without-title/::qa::lurn::qa::&lt;p&gt;This is a link post without a title. The title should be the link with or without protocol. Clicking on the link should open &lt;a href=&quot;http://www.google.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Google&lt;/a&gt; in a new tab or window.&lt;/p&gt;
 ::qa::lurn::qa::Images::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/26/images/::qa::lurn::qa::&lt;p&gt;This is a image test post.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/wallpaper-2572384.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/wallpaper-2311325.jpg&quot; alt=&quot;Caption&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/wallpaper-878514.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://placehold.it/350x150.jpg&quot; alt=&quot;Small Picture&quot;&gt;&lt;/p&gt;
-::qa::lurn::qa::www.google.com::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/24/link-post-without-title/::qa::lurn::qa::&lt;p&gt;This is a link post without a title. The title should be the link with or without protocol. Clicking on the link should open &lt;a href=&quot;http://www.google.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Google&lt;/a&gt; in a new tab or window.&lt;/p&gt;
+::qa::lurn::qa::Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/24/long-title/::qa::lurn::qa::&lt;p&gt;This post has a long title. Make sure the title displayed right.&lt;/p&gt;
 ::qa::lurn::qa::Link Post::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/24/link-post/::qa::lurn::qa::&lt;p&gt;This is a link post. Clicking on the link should open &lt;a href=&quot;http://www.google.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Google&lt;/a&gt; in a new tab or window.&lt;/p&gt;
 ::qa::lurn::qa::::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/25/no-title/::qa::lurn::qa::&lt;p&gt;This post doesn’t have a title. Make sure it’s accessible.&lt;/p&gt;
 ::qa::lurn::qa::Tag Plugins::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/25/tag-plugins/::qa::lurn::qa::&lt;p&gt;This post is used for testing tag plugins. See &lt;a href=&quot;http://zespia.tw/hexo/docs/tag-plugins.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;docs&lt;/a&gt; for more info.&lt;/p&gt;
@@ -223,7 +225,6 @@ this.ref('id');
 &lt;/blockquote&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula justo, lobortis sit amet semper vel, dignissim sit amet libero. Praesent ac tempus ligula. Maecenas at gravida odio. Etiam tristique volutpat lacus eu faucibus. Donec non tempus arcu. Phasellus adipiscing, mauris nec mollis egestas, ipsum nunc auctor velit, et rhoncus lorem ipsum at ante. Praesent et sem in velit volutpat auctor. Duis vel mauris nulla. Maecenas mattis interdum ante, quis sagittis nibh cursus et. Nulla facilisi. Morbi convallis gravida tortor, ut fermentum enim gravida et. Nunc vel dictum nisl, non ultrices libero. Proin vestibulum felis eget orci consectetur lobortis. Vestibulum augue nulla, iaculis vitae augue vehicula, dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.&lt;/p&gt;
 ::qa::lurn::qa::Tags::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/24/tags/::qa::lurn::qa::&lt;p&gt;This post contains 3 tags. Make sure your theme can display all of the tags.&lt;/p&gt;
-::qa::lurn::qa::Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/24/long-title/::qa::lurn::qa::&lt;p&gt;This post has a long title. Make sure the title displayed right.&lt;/p&gt;
 ::qa::lurn::qa::Videos::qa::lurn::qa::http://chengkang.me/hexo-theme-qna/2013/12/25/videos/::qa::lurn::qa::&lt;p&gt;This is a video test post.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Youtube&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&quot;video-container&quot;&gt;&lt;iframe src=&quot;//www.youtube.com/embed/TIbZDRXM-Tg&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
@@ -270,15 +271,18 @@ this.ref('id');
 		}
 		document.getElementById("search_result").style.display = "block";
 	}
-	function dismissSearchResultModal() {
-		document.getElementById("search_result").style.display = "none";
-	}
 	function searchInputOnKeyUp() {
 		event.preventDefault();
 	if (event.keyCode == 13) {
 	searchInSite();
 	}
 	}
+</script>
+
+<script>
+function dismissSearchResultModal() {
+	document.getElementById("search_result").style.display = "none";
+}
 </script>
 </div>
 <div class="section" id="Post">
@@ -293,6 +297,26 @@ this.ref('id');
 
 	
 
+	
+	<div id="disqus_thread"></div>
+	<script>
+	/**
+	*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+	*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+	/*
+	var disqus_config = function () {
+	this.page.url = "http://chengkang.me/hexo-theme-qna/2013/12/24/categories/";  // Replace PAGE_URL with your page's canonical URL variable
+	this.page.identifier = "2013/12/24/categories/"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+	};
+	*/
+	(function() { // DON'T EDIT BELOW THIS LINE
+	var d = document, s = d.createElement('script');
+	s.src = '//swift-newbie.disqus.com/embed.js';
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+	})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 	
 	
 </div>
