@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <title>category: Foo | Theme QnA for Hexo</title>
+        
+        <link rel="alternate" href="/atom.xml" title="Theme QnA for Hexo" type="application/atom+xml">
+        
+        
+        <link rel="icon" href="/favicon.png">
+        
+        <link rel="stylesheet" href="/hexo-theme-qna/css/normalize.css">
+        <link rel="stylesheet" href="/hexo-theme-qna/css/style.css">
+        <link rel="stylesheet" href="/hexo-theme-qna/css/common.css">
+        <link rel="stylesheet" href="/hexo-theme-qna/css/markdown.css">
+    </head>
+    <body onscroll="scrollYListener()">
+        <div class="wrapper">
+            <div class="mobile_menu_btn">
+  <button id="mobile_menu_btn" class="c-hamburger c-hamburger--htx">
+  <span>toggle menu</span>
+  </button>
+</div>
+<div class="slide_menu">
+  <nav class="nav_scroll">
+    <ul class="clearfix">
+      
+      <li class=" "> <a href="/hexo-theme-qna/">Home</a> </li>
+      
+      <li class=" "> <a href="/hexo-theme-qna/archives">Archive</a> </li>
+      
+      <li class=" "> <a href="/hexo-theme-qna/page">Page Test</a> </li>
+      
+    </ul>
+  </nav>
+  <div class="social">
+    <ul class="clearfix">
+      
+      
+      <li> <a href="http://github.com/cheng-kang" target="_blank"> <img src="/hexo-theme-qna/img/GitHub.png"> </a> </li>
+      
+      
+      
+      <li> <a href="http://www.weibo.com/progrant" target="_blank"> <img src="/hexo-theme-qna/img/Weibo.png"> </a> </li>
+      
+      
+      
+      <li> <a href="https://twitter.com/ScotlAnt" target="_blank"> <img src="/hexo-theme-qna/img/Twitter.png"> </a> </li>
+      
+      
+      
+      
+    </ul>
+  </div>
+  <div class="copyright">
+    &copy; 2017 Theme QnA for Hexo | Provided By  <a title="Kang Cheng" href="http://chengkang.me/" target="_blank">Kang Cheng</a>
+  </div>
+</div>
+<header>
+  <div class="mobile_navbar clearfix">
+    
+    <div class="logo">
+      <a href="/hexo-theme-qna/">Theme QnA for Hexo</a>
+    </div>
+    
+  </div>
+  <div class="row clearfix no_form">
+    <div class="logo">
+      <a href="/hexo-theme-qna/">Theme QnA for Hexo</a>
+    </div>
+    <nav class="nav_scroll">
+      <ul class="clearfix">
+        
+        <li class=" "> <a href="/hexo-theme-qna/">Home</a> </li>
+        
+        <li class=" "> <a href="/hexo-theme-qna/archives">Archive</a> </li>
+        
+        <li class=" "> <a href="/hexo-theme-qna/page">Page Test</a> </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+            <div class="section" id="Archive">
+    <h2 class="center">Archive</h2>
+    <div class="article_list">
+        
+        
+        
+        
+        
+        
+        
+        <h4>2013</h4>
+        
+        <p class="article_title"><span>Dec 24, 2013</span><a href="/hexo-theme-qna/2013/12/24/categories/">Categories</a></p>
+        
+    </div>
+</div>
+            <footer>
+	<div class="footer_wrap">
+		<div class="social">
+			<ul class="clearfix">
+				
+				
+				<li> <a href="http://github.com/cheng-kang" target="_blank"> <img src="/hexo-theme-qna/img/GitHub.png"> </a> </li>
+				
+				
+				
+				<li> <a href="http://www.weibo.com/progrant" target="_blank"> <img src="/hexo-theme-qna/img/Weibo.png"> </a> </li>
+				
+				
+				
+				<li> <a href="https://twitter.com/ScotlAnt" target="_blank"> <img src="/hexo-theme-qna/img/Twitter.png"> </a> </li>
+				
+				
+				
+				
+			</ul>
+		</div>
+		<img src="/hexo-theme-qna/img/line.jpg">
+		<div class="copyright">
+			&copy; 2017 Theme QnA for Hexo | Provided By  <a title="Kang Cheng" href="http://chengkang.me/" target="_blank">Kang Cheng</a>
+		</div>
+	</div>
+</footer>
+        </div>
+        <script type="text/javascript">
+        function scrollYListener() {
+        var searchHeight = parseInt(getComputedStyle(document.getElementById("Search")).height)
+        var width = document.documentElement.clientWidth;
+        var supportPageOffset = window.pageXOffset !== undefined;
+        var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+        var scrollY = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
+        if (scrollY >= searchHeight) {
+        document.getElementsByTagName('header')[0].style.backgroundColor = "#cd4b4b";
+        document.getElementsByClassName('logo')[0].style.backgroundColor = "#cd4b4b";
+        } else {
+        document.getElementsByTagName('header')[0].style.backgroundColor = "#4f8e8e";
+        document.getElementsByClassName('logo')[0].style.backgroundColor = "#4f8e8e";
+        }
+        }
+        var isMenuExpanded = false;
+        document.getElementById("mobile_menu_btn").onclick = function toggleMobileMenu() {
+        if (isMenuExpanded) {
+        document.getElementsByClassName('slide_menu')[0].className = "slide_menu";
+        } else {
+        document.getElementsByClassName('slide_menu')[0].className += " mobile_menu_active";
+        }
+        isMenuExpanded = !isMenuExpanded;
+        }
+        </script>
+        
+        
+    </body>
+</html>
