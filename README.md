@@ -54,3 +54,23 @@ Install [hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generato
 $ npm install hexo-generator-search --save
 ```
 
+### Add New Page
+
+1. Add a new page with page name, e.g. about page. You can change page content by editing `source/<page_name>/index.md`.
+
+  ``` bash
+  $ hexo new page about
+  ```
+
+2. Edit `_config.yml` in theme/QnA.
+
+  ```yml
+
+  menu:
+    Home: /
+    Archive: /archives
+    # Add new page config here
+    # Page Dispay Name: /pagename
+    # e.g.
+    About: /about
+  ```
