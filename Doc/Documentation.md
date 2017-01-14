@@ -6,7 +6,7 @@ A Knowledge Base Theme for Hexo.
 
 ## Documentation
 
-- [中文文档](https://github.com/cheng-kang/hexo-theme-qna/blob/master/Doc/%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3.md)
+- [中文文档](./%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3.md)
 
 ## Showcase:
 
