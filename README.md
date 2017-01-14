@@ -1,8 +1,7 @@
 # Theme QnA for Hexo 
 
-A Knowledge Base Theme for [Hexo].
-
 ![](https://raw.githubusercontent.com/cheng-kang/hexo-theme-qna/master/QnA.png)
+A Knowledge Base Theme for Hexo.
 
 ## Showcase:
 
