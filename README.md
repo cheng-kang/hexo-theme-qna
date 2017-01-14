@@ -3,6 +3,11 @@
 ![](https://raw.githubusercontent.com/cheng-kang/hexo-theme-qna/master/QnA.png)
 A Knowledge Base Theme for Hexo.
 
+## Documentation
+
+- [中文文档](https://github.com/cheng-kang/hexo-theme-qna/blob/master/Doc/%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3.md)
+- [Documentation](https://github.com/cheng-kang/hexo-theme-qna/blob/master/Doc/Documentation.md)
+
 ## Showcase:
 
 - [Preview](http://chengkang.me/hexo-theme-qna/)
