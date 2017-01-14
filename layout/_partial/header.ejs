@@ -7,7 +7,21 @@
   <nav class="nav_scroll">
     <ul class="clearfix">
       <% for (var i in theme.menu){ %>
-      <li class="<% if ((is_archive() && i == "Archive")||(is_home() && i == "Home")){ %>active<% } %> <% if (is_post() && i == "Archive"){ %>active dotted<% } %>"> <a href="<%- url_for(theme.menu[i]) %>"><%= __(i) %></a> </li>
+      <% 
+        var clsName = "";
+        if (is_post() && i == "Archive") {
+          clsName = "active dotted";
+        } else if (is_home() && i == "Home") {
+          clsName = "active";
+        } else if (is_archive() && i == "Archive") {
+          clsName = "active";
+        } else {
+            if (theme.menu[i].substring(1)+"/index.html" == path) {
+              clsName = "active";
+            }
+        }
+      %>
+      <li class="<%= clsName %>"> <a href="<%- url_for(theme.menu[i]) %>"><%= __(i) %></a> </li>
       <% } %>
     </ul>
   </nav>
@@ -38,9 +52,23 @@
     </div>
     <nav class="nav_scroll">
       <ul class="clearfix">
-        <% for (var i in theme.menu){ %>
-        <li class="<% if ((is_archive() && i == "Archive")||(is_home() && i == "Home")){ %>active<% } %> <% if (is_post() && i == "Archive"){ %>active dotted<% } %>"> <a href="<%- url_for(theme.menu[i]) %>"><%= __(i) %></a> </li>
-        <% } %>
+      <% for (var i in theme.menu){ %>
+      <% 
+        var clsName = "";
+        if (is_post() && i == "Archive") {
+          clsName = "active dotted";
+        } else if (is_home() && i == "Home") {
+          clsName = "active";
+        } else if (is_archive() && i == "Archive") {
+          clsName = "active";
+        } else {
+            if (theme.menu[i].substring(1)+"/index.html" == path) {
+              clsName = "active";
+            }
+        }
+      %>
+      <li class="<%= clsName %>"> <a href="<%- url_for(theme.menu[i]) %>"><%= __(i) %></a> </li>
+      <% } %>
       </ul>
     </nav>
   </div>
