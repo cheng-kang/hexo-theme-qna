@@ -42,7 +42,7 @@ var searchFunc = function(path, search_id, content_id) {
                 var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
                 $resultContent.innerHTML = "";
                 if (this.value.trim().length <= 0) {
-                    document.getElementById("search_result").style.display = "none";
+                    document.getElementById("search-result").style.display = "none";
                     return;
                 }
                 // perform local searching
@@ -88,12 +88,12 @@ var searchFunc = function(path, search_id, content_id) {
                 });
 
                 if (count == 0) {
-                    document.getElementById("search_result_title").innerHTML = "Found 0 match.";
+                    document.getElementById("search-result-title").innerHTML = "Found 0 match.";
                 } else {
-                    document.getElementById("search_result_title").innerHTML = "Found "+count+" match(es):";
+                    document.getElementById("search-result-title").innerHTML = "Found "+count+" match(es):";
                 }
                 $resultContent.innerHTML = str;
-                document.getElementById("search_result").style.display = "block";
+                document.getElementById("search-result").style.display = "block";
             });
         }
     });

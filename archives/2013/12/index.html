@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         
-        <title>archive_a: 2013/12 | Theme QnA for Hexo</title>
+        <title>Archive: 2013/12 | Theme QnA for Hexo</title>
         
         <link rel="alternate" href="/atom.xml" title="Theme QnA for Hexo" type="application/atom+xml">
         
@@ -90,7 +90,7 @@
 		<br>
 		Find out if your question is answered here
 		</h3>
-		<div id="search_content" class="search_content-modal unexpanded">
+		<div id="search-content" class="search-content-modal unexpanded">
 			<div id="search-view">
 				<div class="search-info box">
 					<input type="text" id="search-input" placeholder="Enter Keyword" >
@@ -100,9 +100,9 @@
 					</svg>
 				</div>
 			</div>
-			<div class="modal" id="search_result" style="display:none">
-				<h2 id="search_result_title">Found 0 match(es):</h2>
-				<ul id="search_result_list">
+			<div class="modal" id="search-result" style="display:none">
+				<h2 id="search-result-title">Found 0 match(es):</h2>
+				<ul id="search-result-list">
 				</ul>
 				<span>
 					<button onclick="dismissSearchResultModal()">×</button>
@@ -116,18 +116,18 @@
 <script src="/hexo-theme-qna/js/search.js"></script>
 <script type="text/javascript">
 var path = "/hexo-theme-qna/search.xml";
-searchFunc(path, 'search-input', 'search_result_list');
+searchFunc(path, 'search-input', 'search-result-list');
 </script>
 
 <script>
 function dismissSearchResultModal() {
-	document.getElementById("search_result").style.display = "none";
+	document.getElementById("search-result").style.display = "none";
 }
 </script>
 </div>
 <div class="section" id="Archive">
     <h2 class="center">Archive</h2>
-    <div class="article_list">
+    <div class="post-list">
         
         
         
@@ -137,61 +137,61 @@ function dismissSearchResultModal() {
         
         <h4>2013</h4>
         
-        <p class="article_title"><span>Dec 26, 2013</span><a href="/hexo-theme-qna/2013/12/26/images/">Images</a></p>
+        <p class="post-title"><span>Dec 26, 2013</span><a href="/hexo-theme-qna/2013/12/26/images/">Images</a></p>
         
         
         
         
         
-        <p class="article_title"><span>Dec 25, 2013</span><a href="/hexo-theme-qna/2013/12/25/no-title/">no-title</a></p>
+        <p class="post-title"><span>Dec 25, 2013</span><a href="/hexo-theme-qna/2013/12/25/no-title/">no-title</a></p>
         
         
         
         
         
-        <p class="article_title"><span>Dec 25, 2013</span><a href="/hexo-theme-qna/2013/12/25/excerpts/">Excerpts</a></p>
+        <p class="post-title"><span>Dec 25, 2013</span><a href="/hexo-theme-qna/2013/12/25/excerpts/">Excerpts</a></p>
         
         
         
         
         
-        <p class="article_title"><span>Dec 25, 2013</span><a href="/hexo-theme-qna/2013/12/25/videos/">Videos</a></p>
+        <p class="post-title"><span>Dec 25, 2013</span><a href="/hexo-theme-qna/2013/12/25/videos/">Videos</a></p>
         
         
         
         
         
-        <p class="article_title"><span>Dec 25, 2013</span><a href="/hexo-theme-qna/2013/12/25/gallery-post/">Gallery Post</a></p>
+        <p class="post-title"><span>Dec 25, 2013</span><a href="/hexo-theme-qna/2013/12/25/gallery-post/">Gallery Post</a></p>
         
         
         
         
         
-        <p class="article_title"><span>Dec 25, 2013</span><a href="/hexo-theme-qna/2013/12/25/tag-plugins/">Tag Plugins</a></p>
+        <p class="post-title"><span>Dec 25, 2013</span><a href="/hexo-theme-qna/2013/12/25/tag-plugins/">Tag Plugins</a></p>
         
         
         
         
         
-        <p class="article_title"><span>Dec 24, 2013</span><a href="/hexo-theme-qna/2013/12/24/link-post-without-title/">www.google.com</a></p>
+        <p class="post-title"><span>Dec 24, 2013</span><a href="/hexo-theme-qna/2013/12/24/link-post-without-title/">www.google.com</a></p>
         
         
         
         
         
-        <p class="article_title"><span>Dec 24, 2013</span><a href="/hexo-theme-qna/2013/12/24/日本語テスト/">日本語テスト</a></p>
+        <p class="post-title"><span>Dec 24, 2013</span><a href="/hexo-theme-qna/2013/12/24/日本語テスト/">日本語テスト</a></p>
         
         
         
         
         
-        <p class="article_title"><span>Dec 24, 2013</span><a href="/hexo-theme-qna/2013/12/24/中文測試/">中文測試</a></p>
+        <p class="post-title"><span>Dec 24, 2013</span><a href="/hexo-theme-qna/2013/12/24/中文測試/">中文測試</a></p>
         
         
         
         
         
-        <p class="article_title"><span>Dec 24, 2013</span><a href="/hexo-theme-qna/2013/12/24/long-title/">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</a></p>
+        <p class="post-title"><span>Dec 24, 2013</span><a href="/hexo-theme-qna/2013/12/24/long-title/">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</a></p>
         
     </div>
 </div>
@@ -242,7 +242,7 @@ function dismissSearchResultModal() {
         var supportPageOffset = window.pageXOffset !== undefined;
         var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
         var scrollY = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
-        if (scrollY >= searchHeight) {
+        if (scrollY >= searchHeight-10) {
         document.getElementsByTagName('header')[0].style.backgroundColor = "#cd4b4b";
         document.getElementsByClassName('logo')[0].style.backgroundColor = "#cd4b4b";
         } else {

@@ -85,7 +85,7 @@
 </header>
             <div class="section" id="Archive">
     <h2 class="center">Archive</h2>
-    <div class="article_list">
+    <div class="post-list">
         
         
         
@@ -95,7 +95,7 @@
         
         <h4>2013</h4>
         
-        <p class="article_title"><span>Dec 24, 2013</span><a href="/hexo-theme-qna/2013/12/24/tags/">Tags</a></p>
+        <p class="post-title"><span>Dec 24, 2013</span><a href="/hexo-theme-qna/2013/12/24/tags/">Tags</a></p>
         
     </div>
 </div>
@@ -134,7 +134,7 @@
         var supportPageOffset = window.pageXOffset !== undefined;
         var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
         var scrollY = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
-        if (scrollY >= searchHeight) {
+        if (scrollY >= searchHeight-10) {
         document.getElementsByTagName('header')[0].style.backgroundColor = "#cd4b4b";
         document.getElementsByClassName('logo')[0].style.backgroundColor = "#cd4b4b";
         } else {
