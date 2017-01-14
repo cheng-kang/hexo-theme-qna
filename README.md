@@ -11,7 +11,7 @@ A Knowledge Base Theme for [Hexo].
 ### Install
 
 ``` bash
-$ git clone https://github.com/cheng-kang/hexo-theme-q-a.git themes/QnA
+$ git clone https://github.com/cheng-kang/hexo-theme-qna.git themes/QnA
 ```
 
 ### Enable
