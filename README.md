@@ -2,9 +2,13 @@
 
 A Knowledge Base Theme for [Hexo].
 
-- [Preview](http://chengkang.me/hexo-theme-qna/)
-
 ![](https://raw.githubusercontent.com/cheng-kang/hexo-theme-qna/master/QnA.png)
+
+## Showcase:
+
+- [Preview](http://chengkang.me/hexo-theme-qna/)
+- [Swift Newbie: a knowledge base for Swift newbie](http://chengkang.me/Swift-Newbie/)
+
 
 ## Installation
 
