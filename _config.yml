@@ -22,12 +22,9 @@ social:
 # Search
 #
 
-# default
-# search_title: Search
-# search_subtitle: Find out if your question is answered here
-
-search_title: 
-search_subtitle: 
+search_title: Search
+search_subtitle: Find out if your question is answered here
+search_placeholder: Enter Keyword
 
 #----------------------------------
 # Comment
@@ -51,13 +48,11 @@ ba:
 # Miscellaneous
 #
 
-# default
-# home_title: Latest List
-# archive_title: Archive
-
+# author_page is your personal website url
 author_page: 
-home_title: 
-archive_title: 
+
+home_title: Latest List
+archive_title: Archive
 article_breadcrumb: Q&A
 page_breadcrumb: PAGE
 
