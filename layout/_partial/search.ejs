@@ -8,8 +8,8 @@
 		<div id="search_content" class="search_content-modal unexpanded">
 			<div id="search-view">
 				<div class="search-info box">
-					<input type="text" id="search-input" placeholder="<%= __(theme.search_placeholder) %>" onkeyup="searchInputOnKeyUp()">
-					<div class="magnifying-glass" id="search-button" onclick="searchInSite(event)">
+					<input type="text" id="search-input" placeholder="<%= __(theme.search_placeholder) %>" <% if (config.search == null) { %>onkeyup="searchInputOnKeyUp()"<% } %>>
+					<div class="magnifying-glass" id="search-button" <% if (config.search == null) { %>onclick="searchInSite(event)"<% } %>>
 						<svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 500 500">
 						<path fill="none" stroke="#fff" stroke-width="36" stroke-linecap="round" d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110"></path>
 					</svg>
@@ -26,6 +26,14 @@
 		</div>
 	</div>
 </div>
+<% if (config.search != null) { %>
+<%- js('js/jquery-3.1.1.min') %>
+<%- js('js/search') %>
+<script type="text/javascript">
+var path = "<%= config.root+config.search.path %>";
+searchFunc(path, 'search-input', 'search_result_list');
+</script>
+<% } else { %>
 <%
 var temp = "";
 site.posts.each(function(post, index) {
@@ -62,14 +70,17 @@ this.ref('id');
 		}
 		document.getElementById("search_result").style.display = "block";
 	}
-	function dismissSearchResultModal() {
-		document.getElementById("search_result").style.display = "none";
-	}
 	function searchInputOnKeyUp() {
 		event.preventDefault();
 	if (event.keyCode == 13) {
 	searchInSite();
 	}
 	}
+</script>
+<% } %>
+<script>
+function dismissSearchResultModal() {
+	document.getElementById("search_result").style.display = "none";
+}
 </script>
 </div>
