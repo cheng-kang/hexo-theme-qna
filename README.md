@@ -46,6 +46,8 @@ deploy:
 
 ### Enable In-site Search Support for Chinese
 
+> By default, QnA support English in-site search.
+
 Install [hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generator-search) plugin for Hexo.
 
 ``` bash
