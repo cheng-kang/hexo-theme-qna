@@ -5,7 +5,7 @@
 		<br>
 		<%= __(theme.search_subtitle) %>
 		</h3>
-		<div id="search_content" class="search_content-modal unexpanded">
+		<div id="search-content" class="search-content-modal unexpanded">
 			<div id="search-view">
 				<div class="search-info box">
 					<input type="text" id="search-input" placeholder="<%= __(theme.search_placeholder) %>" <% if (config.search == null) { %>onkeyup="searchInputOnKeyUp()"<% } %>>
@@ -15,9 +15,9 @@
 					</svg>
 				</div>
 			</div>
-			<div class="modal" id="search_result" style="display:none">
-				<h2 id="search_result_title">Found 0 match(es):</h2>
-				<ul id="search_result_list">
+			<div class="modal" id="search-result" style="display:none">
+				<h2 id="search-result-title">Found 0 match(es):</h2>
+				<ul id="search-result-list">
 				</ul>
 				<span>
 					<button onclick="dismissSearchResultModal()">×</button>
@@ -31,7 +31,7 @@
 <%- js('js/search') %>
 <script type="text/javascript">
 var path = "<%= config.root+config.search.path %>";
-searchFunc(path, 'search-input', 'search_result_list');
+searchFunc(path, 'search-input', 'search-result-list');
 </script>
 <% } else { %>
 <%
@@ -60,15 +60,15 @@ this.ref('id');
 		var keyword = document.getElementById("search-input").value;
 		var result = content.search(keyword);
 		if (result.length == 0) {
-			document.getElementById("search_result_title").innerHTML = "Found 0 match.";
+			document.getElementById("search-result-title").innerHTML = "Found 0 match.";
 		} else {
-			document.getElementById("search_result_title").innerHTML = "Found "+result.length+" match(es):";
+			document.getElementById("search-result-title").innerHTML = "Found "+result.length+" match(es):";
 		}
 		document.getElementById("search_result_list").innerHTML = "";
 		for(var i = 0; i < result.length; i++) {
-			document.getElementById("search_result_list").innerHTML += '<li><a href="'+arr[result[i].ref*3+2]+'">'+arr[result[i].ref*3+1]+'</a></li>';
+			document.getElementById("search-result-list").innerHTML += '<li><a href="'+arr[result[i].ref*3+2]+'">'+arr[result[i].ref*3+1]+'</a></li>';
 		}
-		document.getElementById("search_result").style.display = "block";
+		document.getElementById("search-result").style.display = "block";
 	}
 	function searchInputOnKeyUp() {
 		event.preventDefault();
@@ -80,7 +80,7 @@ this.ref('id');
 <% } %>
 <script>
 function dismissSearchResultModal() {
-	document.getElementById("search_result").style.display = "none";
+	document.getElementById("search-result").style.display = "none";
 }
 </script>
 </div>
