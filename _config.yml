@@ -6,7 +6,6 @@ menu:
   Home: /
   Archive: /archives
 
-
 rss: /atom.xml
 
 #----------------------------------
@@ -59,6 +58,8 @@ ba:
 author_page: 
 home_title: 
 archive_title: 
+article_breadcrumb: Q&A
+page_breadcrumb: PAGE
 
 favicon: /favicon.png
 

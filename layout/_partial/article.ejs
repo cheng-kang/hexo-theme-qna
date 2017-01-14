@@ -1,6 +1,6 @@
 <div class="section" id="Post">
 	<div class="section_content">
-		<p class="breadcrumb"><a href="<%- url_for() %>"><%= __('Q&A') %></a> / <%= (page.title == "" ? "no-title" : page.title) %></p>
+		<p class="breadcrumb"><a href="<%- url_for() %>"><%= isArticle ? __(theme.article_breadcrumb) : __(theme.page_breadcrumb) %></a> / <%= (page.title == "" ? "no-title" : page.title) %></p>
 		<div class="page_content mdcss">
 			<%- page.content %>
 		</div>
